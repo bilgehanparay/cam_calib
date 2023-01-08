@@ -1,1 +1,1 @@
-opencv_interactive-calibration -ci=0 -t=chessboard -sz=22 -w=9 -h=6 -of=camParams.xml -ft=true -vis=grid 
+opencv_interactive-calibration -ci=0 -t=chessboard -sz=33 -w=9 -h=6 -of=camParams.xml -ft=true -vis=grid 
