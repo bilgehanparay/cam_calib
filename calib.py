@@ -24,7 +24,7 @@ if __name__ == "__main__":
         exit()
     columns = 6
     rows = 9
-    gridSize = 22 # mm
+    gridSize = 33 # mm
     objp = np.zeros((columns*rows, 3), np.float32)
     objp[:,:2] = gridSize*np.mgrid[0:rows,0:columns].T.reshape(-1,2)
     objpoints = []
@@ -61,7 +61,7 @@ if __name__ == "__main__":
         gray = imgLog(gray, flog, 480, 470)
         # Display the resulting frame
         cv.imshow('frame', gray)
-        if cv.waitKey(20) == ord('q'):
+        if cv.waitKey(1) == ord('q'):
             break
     # When everything done, release the capture
     cap.release()
